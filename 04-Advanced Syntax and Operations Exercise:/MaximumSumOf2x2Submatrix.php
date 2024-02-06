@@ -28,7 +28,7 @@ for ($i = 0; $i < $rows; $i++) {
   $matrix[$i] = explode(", ", readline());
 }
 
-$countTotal = PHP_INT_MIN;
+$finalCountTotal = PHP_INT_MIN;
 $finalArrResult = [];
 for ($row = 0; $row < count($matrix) - 1; $row++) {
   for ($col = 0; $col < count($matrix[$row]) - 1; $col++) {
@@ -41,8 +41,8 @@ for ($row = 0; $row < count($matrix) - 1; $row++) {
     ];
     $currCount = array_sum($currSubMtrx);
 
-    if ($currCount > $countTotal) {
-      $countTotal = $currCount;
+    if ($currCount > $finalCountTotal) {
+      $finalCountTotal = $currCount;
       $finalArrResult = $currSubMtrx;
     }
     
@@ -51,4 +51,4 @@ for ($row = 0; $row < count($matrix) - 1; $row++) {
 
 echo $finalArrResult[0] . " " . $finalArrResult[1] . PHP_EOL;
 echo $finalArrResult[2] . " " . $finalArrResult[3] . PHP_EOL;
-echo $countTotal;
+echo $finalCountTotal;
