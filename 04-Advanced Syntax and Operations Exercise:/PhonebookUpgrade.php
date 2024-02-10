@@ -1,15 +1,9 @@
 <?php 
 
 /*
-  Problem 13. Phonebook
-  Write a program that receives some info from the console about people and their phone numbers. 
-  Each entry should have just one name and one number (both of them strings).
-
-  On each line you will receive some of the following commands:
-
-  · A {name} {phone} – adds entry to the phonebook. In case of trying to add a name that is already in the phonebook you should change the existing phone number with the new one provided.
-  · S {name} – searches for a contact by given name and prints it in format "{name} -> {number}". In case the contact isn't found, print "Contact {name} does not exist.".
-  · END – stop receiving more commands.
+  Problem 14. Phonebook Upgrade
+  Add functionality to the phonebook from the previous task to print all contacts ordered
+  lexicographically when receive the command “ListAll”.
 
   Example.
   Input:
@@ -34,11 +28,16 @@ do {
 
   if ($command === "A") {
     $phonebook[$name] = $phone;
+    ksort($phonebook);
   } elseif ($command === "S") {
     if (array_key_exists($name, $phonebook)) {
       echo "{$name} -> {$phonebook[$name]}" . PHP_EOL;
     } else {
       echo "Contact {$name} does not exist." . PHP_EOL;
+    }
+  } elseif ($command === "ListAll") {
+    foreach ($phonebook as $key => $value) {
+      echo "{$key} -> {$value}" . PHP_EOL;
     }
   }
 
