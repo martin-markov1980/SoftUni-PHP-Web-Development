@@ -20,7 +20,8 @@ declare(strict_types=1);
   Comments: None
 */
 
-function dayOfWeek(string $day) : string {
+function dayOfWeek(string $day): string
+{
   switch ($day) {
     case "Monday":
       return "1";
@@ -37,7 +38,7 @@ function dayOfWeek(string $day) : string {
     case "Sunday":
       return "7";
     default:
-      return "Invalid day!";  
+      return "Invalid day!";
   }
 }
 
