@@ -1,12 +1,12 @@
 # PHP Web Development
 
-## Курсът "PHP Web Basics" ще ви запознае с основите на уеб програмирането с езика PHP. Изучават се принципите и особеностите на обектно-ориентираното програмиране, с директно приложение в работата с информация от база данни и динамично уеб съдържание. Разглеждат се основни концепции на уеб технологиите като HTTP протокол и обработка на потребителски данни чрез формуляри. Придобитите умения позволяват изграждане на цялостно динамично уеб приложение с възможност за потребителска автентикация (регистрация с име и парола), свързано с база данни. Оценяването в курса е на базата на предадени домашни и практически изпит. 
+## The "PHP Web Basics" course will introduce you to the basics of web programming with the PHP language. The principles and features of object-oriented programming are studied, with direct application in working with database information and dynamic web content. Basic concepts of web technologies such as the HTTP protocol and handling user data through forms are covered. The acquired skills enable the construction of a complete dynamic web application. This includes the possibility of user authentication (registration with a name and password) connected to a database. 
 
-### Умения, които ще придобиеш:
+### Skills you will acquire:
 
-- Решаване на алгоритмични проблеми чрез РНР
-- Създаване на статични и динамични уеб страници
-- Запазване на динамично съдържание в база данни
-- Енкапсулиране на програмна логика в обекти и класове
-- Следване на конвенции на езика и добри практики
-- Изграждане на цялостни уеб приложения
+- Solving algorithmic problems using PHP
+- Creation of static and dynamic web pages
+- Saving dynamic content to a database
+- Encapsulating program logic in objects and classes
+- Following language conventions and good practices
+- Building complete web applications
