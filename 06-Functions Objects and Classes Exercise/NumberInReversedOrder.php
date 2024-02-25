@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
-  Problem 9. Last Digit Name
+  Problem 10. Number in Reversed Order
   
   Write a class DecimalNumber that has a method that prints all its digits in reversed order.
 
